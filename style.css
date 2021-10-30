@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+}
+
+
+
+
+.bubbling {
+	text-align: center;
+	width:auto;
+	height:auto;
+	display: flex;
+	align-items: center;
+}
+.bubbling span {
+	width: 15px;
+	height: 15px;
+	background: #faa60a;
+	border-radius: 74px;
+	animation: bubbling 0.6s infinite alternate;
+}
+.bubbling > div:nth-child(even) {
+	margin: 0 2px;
+}
+#bubbling1 {
+	animation-delay: 0s;
+}
+#bubbling2 {
+	animation-delay: 0.18s;
+}
+#bubbling3 {
+	animation-delay: 0.36s;
+}
+@keyframes bubbling {
+	0% {
+		width: 15px;
+		height: 15px;
+		background-color:#faa60a;
+		transform: translateY(0);
+}
+	100% {
+		width: 35px;
+		height: 35px;
+		background-color:#C4C4C4;
+		transform: translateY(-31px);
+	}
+}
